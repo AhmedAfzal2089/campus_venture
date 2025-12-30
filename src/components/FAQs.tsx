@@ -8,23 +8,28 @@ import {
 const faqs = [
   {
     question: "Can I invest even if I only have a small amount?",
-    answer: "Yes! Campus venture is built for micro-funding—you can start with as little as PKR 100 and still make an impact. This makes investing accessible to students, faculty, and alumni regardless of their budget.",
+    answer:
+      "Yes! Campus venture is built for micro-funding—you can start with as little as PKR 100 and still make an impact. This makes investing accessible to students, faculty, and alumni regardless of their budget.",
   },
   {
     question: "What do investors get in return?",
-    answer: "Investors receive exclusive rewards and perks such as merchandise, early/beta access to products, early-supporter badges, recognition within the university community, and future revenue-share options in later rounds as startups mature.",
+    answer:
+      "Investors receive exclusive rewards and perks such as merchandise, early/beta access to products, early-supporter badges, recognition within the university community, and future revenue-share options in later rounds as startups mature.",
   },
   {
     question: "How do you make sure the startups are genuine?",
-    answer: "Every founder is required to pass university CMS/student ID verification, and projects are reviewed before going live. Startups must provide regular progress updates, and inactive or suspicious listings get auto-flagged or removed to protect investor trust.",
+    answer:
+      "Every founder is required to pass university CMS/student ID verification, and projects are reviewed before going live. Startups must provide regular progress updates, and inactive or suspicious listings get auto-flagged or removed to protect investor trust.",
   },
   {
     question: "Do investors get updates on progress?",
-    answer: "Yes, founders must provide periodic updates on milestones, progress reports, and growth metrics. Delays or inactivity can trigger warnings or removal, ensuring transparency and accountability.",
+    answer:
+      "Yes, founders must provide periodic updates on milestones, progress reports, and growth metrics. Delays or inactivity can trigger warnings or removal, ensuring transparency and accountability.",
   },
   {
-    question: "What fees does Campus Invest charge?",
-    answer: "Campus Venture charges a platform commission of 5-10% per funding round, paid by the startup. There is also a startup onboarding fee (PKR 2,000-5,000) depending on startup type. Investors pay no fees—you invest exactly what you choose.",
+    question: "What fees does Campus Venture charge?",
+    answer:
+      "Campus Venture charges a platform commission of 5-10% per funding round, paid by the startup. There is also a startup onboarding fee (PKR 2,000-5,000) depending on startup type. Investors pay no fees—you invest exactly what you choose.",
   },
 ];
 
@@ -59,9 +64,7 @@ const FAQs = () => {
         </Accordion>
 
         <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4">
-            Still have questions?
-          </p>
+          <p className="text-muted-foreground mb-4">Still have questions?</p>
           <a
             href="mailto:hello@campusinvest.pk"
             className="text-primary font-semibold hover:underline"
@@ -75,4 +78,3 @@ const FAQs = () => {
 };
 
 export default FAQs;
-

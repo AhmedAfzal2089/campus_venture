@@ -1,4 +1,4 @@
-# 🚀 Campus Invest - AI-Powered University Micro-Investment Platform
+# 🚀 Campus Venture - AI-Powered University Micro-Investment Platform
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed-Vercel-black)](https://campus-invest.vercel.app)
 [![Built with React](https://img.shields.io/badge/Built%20with-React-61DAFB)](https://reactjs.org/)
@@ -10,7 +10,7 @@
 
 ## 🎯 Project Overview
 
-Campus Invest bridges the gap between student innovation and early-stage funding. We connect verified university students, alumni, and faculty to fund promising startups and final-year projects (FYPs) with micro-investments starting from just **PKR 100**.
+Campus Venture bridges the gap between student innovation and early-stage funding. We connect verified university students, alumni, and faculty to fund promising startups and final-year projects (FYPs) with micro-investments starting from just **PKR 100**.
 
 ### Key Features
 
@@ -29,9 +29,10 @@ Campus Invest bridges the gap between student innovation and early-stage funding
 Transform your final-year project abstract into a comprehensive startup concept in seconds using Google Gemini AI.
 
 **Features:**
+
 - **Input**: Paste your FYP abstract
 - **AI Processing**: Analyzes your project and generates a complete business plan
-- **Output**: 
+- **Output**:
   - One-line pitch
   - Problem statement with data
   - Solution architecture
@@ -43,6 +44,7 @@ Transform your final-year project abstract into a comprehensive startup concept 
 - **Speed**: ⚡ Ultra-fast response (3-5 seconds)
 
 **Tech Stack:**
+
 - Google Gemini 2.5 Flash API
 - React + TypeScript
 - jsPDF for document generation
@@ -58,7 +60,8 @@ Students can instantly convert their academic projects into investor-ready start
 Calculate the perfect funding amount with AI-powered analysis and justification.
 
 **Features:**
-- **Input**: 
+
+- **Input**:
   - Startup idea description
   - Expected number of users
   - Team size (optional)
@@ -77,6 +80,7 @@ Calculate the perfect funding amount with AI-powered analysis and justification.
 - **Speed**: ⚡ Ultra-fast response (3-5 seconds)
 
 **Tech Stack:**
+
 - Google Gemini 2.5 Flash API
 - React + TypeScript
 - jsPDF for document generation
@@ -100,7 +104,7 @@ First-time founders who don't know how much to ask for can get data-driven, real
 
 - **Modern Stack**: React 18, TypeScript, Vite, Tailwind CSS
 - **Serverless Architecture**: Vercel serverless functions for scalable AI API calls
-- **Optimized Performance**: 
+- **Optimized Performance**:
   - Fast AI responses (3-5 seconds)
   - Single model approach (Gemini 2.5 Flash)
   - Optimized prompts for speed
@@ -118,6 +122,7 @@ First-time founders who don't know how much to ask for can get data-driven, real
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - **Framework**: React 18 + TypeScript
 - **Build Tool**: Vite
 - **Styling**: Tailwind CSS + shadcn/ui components
@@ -125,13 +130,15 @@ First-time founders who don't know how much to ask for can get data-driven, real
 - **Icons**: Lucide React
 
 ### Backend & AI
+
 - **API**: Vercel Serverless Functions
 - **AI Model**: Google Gemini 2.5 Flash
-- **API Routes**: 
+- **API Routes**:
   - `/api/transform` - FYP Transformer
   - `/api/funding-calculator` - Funding Calculator
 
 ### Deployment
+
 - **Platform**: Vercel
 - **CI/CD**: Automatic deployments from GitHub
 - **Environment**: Serverless functions with edge optimization
@@ -141,30 +148,35 @@ First-time founders who don't know how much to ask for can get data-driven, real
 ## 📦 Installation & Setup
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 - Google Gemini API Key ([Get one here](https://aistudio.google.com/app/apikey))
 
 ### Local Development
 
 1. **Clone the repository**
+
 ```bash
 git clone https://github.com/saad-faran/campus-invest.git
 cd campus-invest
 ```
 
 2. **Install dependencies**
+
 ```bash
 npm install
 ```
 
 3. **Set up environment variables**
-Create a `.env.local` file:
+   Create a `.env.local` file:
+
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
 4. **Run development server**
+
 ```bash
 # For frontend only
 npm run dev
@@ -174,6 +186,7 @@ npm run dev:full
 ```
 
 5. **Open in browser**
+
 - Frontend: http://localhost:8080
 - API Server: http://localhost:3001
 
@@ -191,17 +204,20 @@ npm run preview
 ### Vercel Deployment
 
 1. **Connect GitHub Repository**
+
    - Go to [Vercel Dashboard](https://vercel.com)
    - Click "New Project"
    - Import `saad-faran/campus-invest` repository
 
 2. **Configure Build Settings**
+
    - Framework Preset: Vite
    - Build Command: `npm run build`
    - Output Directory: `dist`
    - Install Command: `npm install`
 
 3. **Add Environment Variables**
+
    - Go to Project Settings → Environment Variables
    - Add: `GEMINI_API_KEY` = `your_api_key_here`
    - Save and redeploy
@@ -246,6 +262,7 @@ campus-invest/
 ## 🎨 Key Features
 
 ### For Founders
+
 - ✅ Register your startup with university verification
 - ✅ Set funding goals and milestones
 - ✅ Track investor contributions
@@ -254,6 +271,7 @@ campus-invest/
 - ✅ **AI-Powered**: Calculate optimal funding ask
 
 ### For Investors
+
 - ✅ Browse verified university startups
 - ✅ Micro-invest starting from PKR 100
 - ✅ Track portfolio performance
@@ -261,6 +279,7 @@ campus-invest/
 - ✅ Transparent progress tracking
 
 ### For Universities
+
 - ✅ Innovation dashboard
 - ✅ Startup tracking & analytics
 - ✅ Alumni engagement metrics
@@ -285,6 +304,7 @@ campus-invest/
 **Endpoint**: `POST /api/transform`
 
 **Request Body**:
+
 ```json
 {
   "abstract": "Your final year project abstract here..."
@@ -292,6 +312,7 @@ campus-invest/
 ```
 
 **Response**:
+
 ```json
 {
   "text": "Generated startup concept plan..."
@@ -303,6 +324,7 @@ campus-invest/
 **Endpoint**: `POST /api/funding-calculator`
 
 **Request Body**:
+
 ```json
 {
   "startupIdea": "Description of your startup idea",
@@ -312,6 +334,7 @@ campus-invest/
 ```
 
 **Response**:
+
 ```json
 {
   "text": "Funding recommendation with breakdown..."

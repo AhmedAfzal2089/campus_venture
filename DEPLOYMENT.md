@@ -1,10 +1,11 @@
-# 🚀 Deployment Guide - Campus Invest
+# 🚀 Deployment Guide - Campus Venture
 
 ## ✅ Step 1: Push to GitHub
 
 Your code is committed and ready. You need to authenticate and push:
 
 ### Option A: Using GitHub CLI (Recommended)
+
 ```bash
 # Install GitHub CLI if not installed
 brew install gh
@@ -17,6 +18,7 @@ git push -u origin main
 ```
 
 ### Option B: Using Personal Access Token
+
 ```bash
 # Generate a token at: https://github.com/settings/tokens
 # Select: repo (all permissions)
@@ -26,6 +28,7 @@ git push https://YOUR_TOKEN@github.com/saad-faran/campus-invest.git main
 ```
 
 ### Option C: Using SSH (If you have SSH keys set up)
+
 ```bash
 # Change remote to SSH
 git remote set-url origin git@github.com:saad-faran/campus-invest.git
@@ -49,6 +52,7 @@ git push -u origin main
 ### 2.2 Configure Project Settings
 
 Vercel should auto-detect:
+
 - **Framework Preset**: Vite
 - **Build Command**: `npm run build`
 - **Output Directory**: `dist`
@@ -82,7 +86,7 @@ Vercel should auto-detect:
 
 1. **Homepage loads**: https://campus-invest.vercel.app
 2. **AI Tools visible**: Scroll to see FYP Transformer and Funding Calculator
-3. **API endpoints work**: 
+3. **API endpoints work**:
    - Test FYP Transformer with a sample abstract
    - Test Funding Calculator with sample inputs
 4. **No errors in console**: Check browser DevTools
@@ -117,28 +121,35 @@ Vercel should auto-detect:
 ### Build Fails
 
 **Error**: "Module not found"
+
 - **Solution**: Run `npm install` locally, commit `package-lock.json`
 
 **Error**: "API route not found"
+
 - **Solution**: Ensure files are in `/api` folder, not `/api-server.js`
 
 ### AI Features Don't Work
 
 **Error**: "GEMINI_API_KEY is not set"
+
 - **Solution**: Add environment variable in Vercel dashboard
 
 **Error**: "API returned 401"
+
 - **Solution**: Check API key is valid and has proper permissions
 
 **Error**: "Function timeout"
+
 - **Solution**: Vercel free tier has 10s timeout. Our optimized AI calls are 3-5s, should work fine.
 
 ### Deployment Issues
 
 **Error**: "Framework not detected"
+
 - **Solution**: Manually set Framework Preset to "Vite"
 
 **Error**: "Build output not found"
+
 - **Solution**: Verify Output Directory is set to `dist`
 
 ---
@@ -160,6 +171,7 @@ Vercel should auto-detect:
 ## 🎉 Success!
 
 Once deployed, your site will be:
+
 - ✅ Live at `https://campus-invest.vercel.app`
 - ✅ Automatically updated on every git push
 - ✅ AI features fully functional
@@ -172,4 +184,3 @@ Once deployed, your site will be:
 - Check Vercel logs for errors
 - Review GitHub Actions (if enabled)
 - Contact: hello@campusinvest.pk
-
