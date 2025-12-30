@@ -11,7 +11,7 @@ const startups = [
   {
     name: "EcoCharge",
     category: "Clean Energy",
-    university: "NUST",
+    university: "UCP",
     description: "Solar-powered charging stations for campus devices with IoT monitoring",
     target: 50000,
     raised: 38500,

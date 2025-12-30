@@ -1,4 +1,4 @@
-import nustLogo from "@/assets/images/universities/nust.png";
+import nustLogo from "@/assets/images/universities/ucp.png";
 import lumsLogo from "@/assets/images/universities/lums.png";
 import uetLogo from "@/assets/images/universities/uet.png";
 import fastLogo from "@/assets/images/universities/fast.png";
@@ -7,8 +7,8 @@ import gikiLogo from "@/assets/images/universities/giki.png";
 
 const universities = [
   {
-    name: "NUST",
-    website: "https://nust.edu.pk",
+    name: "UCP",
+    website: "https://ucp.edu.pk/",
     logo: nustLogo,
   },
   {
